@@ -26,6 +26,17 @@
   -moz-osx-font-smoothing: grayscale; */
 }
 
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -36,16 +47,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
   min-height: 100vh;
+  height: 293rem;
+  width: 100vh;
   background: var(--background-color);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 /* button {
@@ -60,11 +65,11 @@ h1 {
   transition: border-color 0.25s;
 } */
 button:hover {
-  border-color: #646cff;
+  border-color: none;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--secondary);
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,4 +1,5 @@
 import Logo from "./Logo.jsx";
+import Button from "./Button.jsx";
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
         </menu>
      
       <div className="w-full flex flex-row box-border justify-end">
-        <button className="px-4 py-2 text-white text-xl rounded-3xl hover:border-transparent" style={{backgroundColor:"var(--secondary)"}}>Join wishlist</button>
+      <Button />
       </div>
     </header>
   )

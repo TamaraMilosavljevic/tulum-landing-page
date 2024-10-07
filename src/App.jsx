@@ -1,13 +1,14 @@
 import Header from './Components/Header'
-
 import './App.css'
+import HeroSection from './Components/HeroSection'
 
 function App() {
 
   return (
-    <main className='w-screen px-6 py-6 flex flex-col gap-10 align-center justify-stretch'>
-      <Header />
-
+    <main className='flex flex-col items-center justify-evenly gap-24'>
+    <Header />
+    <HeroSection />
+      
     </main>
   )
 }
