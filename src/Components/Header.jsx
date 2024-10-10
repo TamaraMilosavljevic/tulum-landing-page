@@ -3,7 +3,7 @@ import Button from "./Button.jsx";
 
 export default function Header() {
   return (
-    <header className="w-full mx-0 sticky flex flex-row items-center">
+    <header className="w-full mx-0 sticky top-0 flex flex-row items-center" style={{backgroundColor: '#f8f7ff'}}>
       <div className="w-full">
         <Logo />
       </div>

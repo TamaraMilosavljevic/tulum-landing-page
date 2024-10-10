@@ -30,11 +30,33 @@ h1 {
   font-size: 4rem;
   line-height: 5rem;
   font-weight: 700;
+  color: "var(--secondary)";
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: "var(--secondary)";
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.87rem;
+  font-weight: 700;
+  color: "var(--secondary)";
 }
 
 p {
   font-size: 1.5rem;
   color: #333;
+  color: "var(--secondary)";
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: "var(--secondary)";
 }
 
 a {
@@ -49,8 +71,11 @@ a:hover {
 body {
   min-height: 100vh;
   height: 293rem;
-  width: 100vh;
   background: var(--background-color);
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 /* button {

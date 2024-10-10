@@ -10,6 +10,13 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"], // Add any custom fonts here
       },
     },
+    colors: {
+      primary: "#b2abfd",
+    },
+    backgroundImage: {
+      "gradient-theme":
+        "linear-gradient(rgb(118,58,241) 0%, rgb(96,102,244) 100%)",
+    },
   },
   plugins: [],
 };
