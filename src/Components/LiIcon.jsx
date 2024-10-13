@@ -1,6 +1,7 @@
 import {} from '@heroicons/react/24/solid'
 import { SectionIcon } from './SectionIcon'
 
+// eslint-disable-next-line react/prop-types
 export const LiIcon = ({name,description,icon, leftAlign }) => {
   return (
     <div className={`w-full flex flex-col gap-4 ${ leftAlign ? 'items-end text-right justify-end': 'items-start'}`}>

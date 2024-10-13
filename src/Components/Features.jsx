@@ -1,11 +1,10 @@
-import { MapIcon, TicketIcon, MegaphoneIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 import { LiIcon } from './LiIcon';
 import mockUp from '../assets/smartmockup.png';
 
 export const Features = () => {
 
   return (
-    <main className='w-full flex flex-col gap-20 items-center justify-center'>
+    <section id="features" className='w-full flex flex-col gap-20 items-center justify-center'>
       <div className='w-full flex flex-col gap-4 items-center max-w-3xl	'>
         <h2 style={{color:'var(--secondary)'}}>How Tulum Works</h2>
         <p className='text-center'>Discover how Tulum transforms your pary expirience. Makes finding and hosting parties easy and fun. Here&#39;s how:</p>
@@ -23,6 +22,6 @@ export const Features = () => {
         <LiIcon name="Account" icon="userIcon" description="Customize your unique party exeirience with your personal Tulum account." />
         </div>
       </div>
-    </main>
+    </section>
   )
 }
