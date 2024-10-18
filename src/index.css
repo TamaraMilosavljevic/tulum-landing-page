@@ -21,6 +21,7 @@
   );
   --text-gradient-theme: linear-gradient(#763af1 0%, #6066f4 100%);
   --text-violet: #7b61ff;
+  --soft-primary: hwb(245 67% 0% / 0.4);
 
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
@@ -47,10 +48,21 @@ h3 {
   color: "var(--secondary)";
 }
 
+#light {
+  font-weight: 500;
+}
+
 p {
   font-size: 1.5rem;
   color: #333;
   color: "var(--secondary)";
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333;
+  font-weight: 300;
 }
 
 li {

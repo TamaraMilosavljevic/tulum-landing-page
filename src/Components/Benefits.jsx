@@ -26,7 +26,7 @@ export const Benefits = () => {
   ];
 
   return (
-    <section className="w-full flex flex-col text-start border-solid border-gray-950	gap-16 flex-wrap lg:flex-nowrap">
+    <section className="w-full mx-8 flex flex-col text-start border-solid border-gray-950	gap-16 flex-wrap lg:flex-nowrap">
       <div
         id="hero-section"
         className="flex flex-col items-center justify-center gap-16"
@@ -48,7 +48,7 @@ export const Benefits = () => {
             description={description}
           />
         ))}
-        <div className="absolute w-full h-full left-1/2 top-0">
+        <div className="absolute w-1/2 object-fit h-full left-1/2 top-0">
           <img src={tickets} alt="floating watermark with tickets" />
         </div>
       </div>

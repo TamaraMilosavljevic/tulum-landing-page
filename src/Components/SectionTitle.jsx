@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export const SectionTitle = ({ heading, subheading }) => {
   return (
     <div className="w-full flex flex-col gap-4 items-center max-w-3xl	">

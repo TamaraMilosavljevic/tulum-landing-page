@@ -3,6 +3,7 @@ import "./App.css";
 import HeroSection from "./Components/HeroSection";
 import { Features } from "./Components/Features";
 import { Benefits } from "./Components/Benefits";
+import { Reviews } from "./Components/Reviews";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HeroSection />
         <Features />
         <Benefits />
+        <Reviews />
       </div>
     </main>
   );

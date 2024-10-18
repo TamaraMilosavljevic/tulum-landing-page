@@ -40,7 +40,7 @@ hosting parties easy and fun. Here&#39;s how:"
           <LiIcon
             name="Account"
             icon="userIcon"
-            description="Customize your unique party exeirience with your personal Tulum account."
+            description="Customize your unique party experience with your personal Tulum account."
           />
         </div>
       </div>
