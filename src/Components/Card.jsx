@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export const Card = ({ name, quote, avatar }) => {
   return (
     <div
@@ -10,7 +11,7 @@ export const Card = ({ name, quote, avatar }) => {
         </div>
         <div className="w-2/3 flex flex-col justify-start gap-[0.5rem] align-top pr-4">
           <h3 className="text-gray-800">{name}</h3>
-          <h6 className="">{quote}</h6>
+          <blockquote className="">{quote}</blockquote>
         </div>
       </div>
     </div>

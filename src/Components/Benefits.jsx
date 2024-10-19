@@ -26,7 +26,7 @@ export const Benefits = () => {
   ];
 
   return (
-    <section className="w-full mx-8 flex flex-col text-start border-solid border-gray-950	gap-16 flex-wrap lg:flex-nowrap">
+    <section className=" min-h-[500px] w-full mx-8 flex flex-col text-start border-solid border-gray-950	gap-16 flex-wrap lg:flex-nowrap">
       <div
         id="hero-section"
         className="flex flex-col items-center justify-center gap-16"
@@ -39,7 +39,7 @@ export const Benefits = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-10 text-left justify-start relative">
+      <div className="h-full flex flex-col gap-10 text-left justify-start relative index-40">
         {benefitsList.map(({ name, description, icon }) => (
           <LiIcon
             key={icon}

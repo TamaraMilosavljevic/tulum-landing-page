@@ -4,6 +4,7 @@ import HeroSection from "./Components/HeroSection";
 import { Features } from "./Components/Features";
 import { Benefits } from "./Components/Benefits";
 import { Reviews } from "./Components/Reviews";
+import { Faq } from "./Components/Faq";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Features />
         <Benefits />
         <Reviews />
+        <Faq />
       </div>
     </main>
   );
