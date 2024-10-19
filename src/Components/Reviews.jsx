@@ -1,5 +1,5 @@
 import { SectionTitle } from "./SectionTitle";
-import { MagicLoop } from "./MagicLoop";
+import { MagicLoop } from "./ui/MagicLoop";
 
 export const Reviews = () => {
   return (
