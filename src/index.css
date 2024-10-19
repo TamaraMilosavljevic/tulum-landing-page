@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 3rem;
   line-height: 2.5rem;
+  word-spacing: 0.009rem;
   font-weight: 500;
   color: "var(--secondary)";
 }
@@ -44,7 +45,6 @@ h2 {
 h3 {
   font-size: 2rem;
   line-height: 1.87rem;
-  font-weight: 700;
   color: "var(--secondary)";
 }
 

@@ -22,6 +22,7 @@ export const LiIcon = ({ name, description, icon, leftAlign }) => {
             WebkitBackgroundClip: "text", // Clips the gradient to the text
             WebkitTextFillColor: "transparent",
           }}
+          className="font-bold"
         >
           {name}
         </h3>

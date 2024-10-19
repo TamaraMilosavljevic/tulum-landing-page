@@ -39,7 +39,7 @@ export const Reviews = () => {
       <div>
         <Card
           name="Alex M."
-          quote="Tulum is freaking awesome!"
+          quote="Tulum makes finding parties so easy! I&#39;ve discovered amazing events I would&#39;ve never known about. The app is super user-friendly, and buying tickets with UICOINS is a breeze!"
           avatar={avatar1}
         />
       </div>

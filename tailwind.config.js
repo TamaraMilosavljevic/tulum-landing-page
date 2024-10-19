@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         primary: "#B2ABFF !important",
         secondary: "#4d4d4d",
+        "text-gray": "#363636",
       },
       backgroundImage: {
         "gradient-theme":
