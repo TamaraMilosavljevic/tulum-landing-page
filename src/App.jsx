@@ -5,6 +5,7 @@ import { Features } from "./Components/Features";
 import { Benefits } from "./Components/Benefits";
 import { Reviews } from "./Components/Reviews";
 import { Faq } from "./Components/Faq";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Benefits />
         <Reviews />
         <Faq />
+        <Footer />
       </div>
     </main>
   );

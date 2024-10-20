@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 // Accordion Item Component
 // eslint-disable-next-line react/prop-types
-const AccordionItem = ({ index, question, answer }) => {
+const AccordionItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {

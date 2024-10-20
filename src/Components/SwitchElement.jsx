@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { SwitchButton } from "./SwitchButton";
 
 const BUTTON_SWITCH_TYPES = {
@@ -6,14 +5,10 @@ const BUTTON_SWITCH_TYPES = {
   HOST: "HOST",
 };
 
-export const SwitchElement = () => {
-  const [selectedButton, setSelectedButton] = useState(
-    BUTTON_SWITCH_TYPES.GUEST
-  );
-
-  const handleSelect = (newSelectedButton) => {
-    setSelectedButton(newSelectedButton);
-  };
+export const SwitchElement = ({ selectedButton, onSelect }) => {
+  // const [selectedButton, setSelectedButton] = useState(
+  //   BUTTON_SWITCH_TYPES.GUEST
+  // );
 
   return (
     <div
@@ -24,7 +19,7 @@ export const SwitchElement = () => {
         <SwitchButton
           key={item}
           selected={item === selectedButton}
-          onClick={() => handleSelect(item)}
+          onClick={onSelect}
           label={item}
         />
       ))}

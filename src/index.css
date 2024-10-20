@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  scroll-behavior: smooth;
   font-family: Roboto;
   line-height: 1.5;
   font-weight: 400;
@@ -20,6 +21,13 @@
     #f8f7ff 100%
   );
   --text-gradient-theme: linear-gradient(#763af1 0%, #6066f4 100%);
+  --header-gradient: linear-gradient(
+    #f8f7ff 0%,
+    #e1deff 25%,
+    #d2ceff 50%,
+    #e1deff 75%,
+    #f8f7ff00 100%
+  );
   --text-violet: #7b61ff;
   --soft-primary: hwb(245 67% 0% / 0.4);
 
@@ -88,7 +96,7 @@ a:hover {
 
 body {
   min-height: 100vh;
-  height: 293rem;
+  height: 100%;
   background: var(--background-color);
   padding-top: 4.3rem;
   padding-bottom: 4.3rem;
