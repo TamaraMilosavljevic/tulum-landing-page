@@ -3,10 +3,8 @@ import Accordion from "./ui/Accordion";
 
 export const Faq = () => {
   return (
-    <section
-      id="faq"
-      className="w-full flex flex-col gap-20 items-center justify-center"
-    >
+    <section className="w-full flex flex-col gap-20 items-center justify-center">
+      <div className="h-5px" id="faq"></div>
       <SectionTitle
         heading="Frequently Asked Questions"
         subheading="Answer your customer possible questions here, it will increase the conversion rate as well as support or chat requests."

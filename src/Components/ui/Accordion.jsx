@@ -42,27 +42,27 @@ const Accordion = () => {
     {
       question: "Can I use the app without creating an account?",
       answer:
-        "Material Tailwind is a framework that enhances Tailwind CSS with additional styles and components.",
+        "No, in order to fully access and enjoy all of Tulum's features, such as browsing events, purchasing tickets with UICOINS, and organizing your own parties, you'll need to create an account.",
     },
     {
       question: "Is there a cost to use the app?",
       answer:
-        "You can use Material Tailwind by importing its components into your Tailwind CSS project.",
+        "All your transactions are free, and you can purchase UICOINS with real money to use them for ticket purchases.",
     },
     {
       question: "How do I find groups or people with similar interests?",
       answer:
-        "Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.",
+        "You can find groups and people with similar interests by browsing through the various categories and subcategories available on the app. You can also use the search bar to find specific groups or people.",
     },
     {
       question: "Can I create private events?",
       answer:
-        "Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.",
+        "Yes, you can create private events by selecting the private event option when creating an event. This will make the event only visible to you and the people you invite.",
     },
     {
       question: "How can I delete my account?",
       answer:
-        "Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.",
+        "You can delete your account by going to the settings page and selecting the delete account option. Please note that this action is irreversible and will permanently delete your account and all associated data.",
     },
   ];
 

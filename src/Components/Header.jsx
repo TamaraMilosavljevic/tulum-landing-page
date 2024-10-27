@@ -1,6 +1,8 @@
 import Logo from "./Logo.jsx";
-import Button from "./Button.jsx";
+import Button from "./ui/Button.jsx";
 import { NavigationLabel } from "./ui/NavigationLabel.jsx";
+import WishlistModal from "./ui/WishlistModal.jsx";
+import { useCallback, useState } from "react";
 
 export default function Header() {
   const navigationMenu = [
@@ -9,9 +11,23 @@ export default function Header() {
     { label: "Benefits", href: "#benefits", size: "large" },
     { label: "FAQs", href: "#faq", size: "large" },
   ];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleClick = useCallback(() => {
+    setIsModalOpen(true);
+  }, []);
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleFormSubmit = (formData) => {
+    setIsModalOpen(false);
+    console.log("Form submitted with data:", formData);
+  };
+
   return (
     <header
-      className="w-full mx-0 sticky top-[4.3rem] flex flex-row items-center"
+      className="w-full mx-0 sticky top-[2rem] flex flex-row items-center"
       style={{ backgroundColor: "" }}
     >
       <div className="w-full">
@@ -32,10 +48,25 @@ export default function Header() {
           ))}
         </ul>
       </menu>
-
       <div className="w-full flex flex-row box-border justify-end">
-        <Button />
+        <Button
+          styleButton="px-8 py-4 text-white font-normal text-xl rounded-[2rem] hover:border-transparent cursor-pointer"
+          onClick={handleClick}
+          isModal="no"
+        >
+          Join wishlist
+        </Button>
       </div>
+      {isModalOpen && (
+        <WishlistModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          buttonCaption="Add to wishlist"
+          onSubmit={handleFormSubmit}
+          title="Join wishlist"
+          subtitle="Enter your full name and email to add Tulum on Wishlist."
+        />
+      )}
     </header>
   );
 }

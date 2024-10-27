@@ -15,7 +15,9 @@ function App() {
         <HeroSection />
         <Features />
         <Benefits />
-        <Reviews />
+        <div className="w-full">
+          <Reviews />
+        </div>
         <Faq />
         <Footer />
       </div>

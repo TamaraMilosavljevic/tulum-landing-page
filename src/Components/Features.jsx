@@ -4,10 +4,9 @@ import { SectionTitle } from "./SectionTitle";
 
 export const Features = () => {
   return (
-    <section
-      id="features"
-      className="w-full flex flex-col gap-20 items-center justify-center"
-    >
+    <section className="w-full flex flex-col gap-20 items-center justify-center">
+      <div className="h-5px" id="features"></div>
+
       <SectionTitle
         heading="How Tulum Works"
         subheading="Discover how Tulum transforms your pary expirience. Makes finding and

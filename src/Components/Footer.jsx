@@ -1,13 +1,52 @@
 import Logo from "./Logo";
 import { NavigationLabel } from "./ui/NavigationLabel";
+import TermsModal from "./ui/TermsModal";
+import { useState } from "react";
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    title: "",
+    subtitle: "",
+  });
+
   const navigationCol1 = [
     { label: "Home", href: "#hero-section", size: "small" },
     { label: "Guests", href: "#benefits", size: "small" },
     { label: "Host", href: "#benefits", size: "small" },
     { label: "FAQs", href: "#faq", size: "small" },
   ];
+
+  const handleOpenModal = (type) => {
+    switch (type) {
+      case "terms":
+        setModalContent({
+          title: "Terms of Service",
+          subtitle:
+            "By using Tulum, you agree to our terms of service which outline the rules and guidelines for using our platform.",
+        });
+        break;
+      case "privacy":
+        setModalContent({
+          title: "Privacy Policy",
+          subtitle:
+            "We take your privacy seriously. Learn how we collect, use, and protect your personal information.",
+        });
+        break;
+      case "legal":
+        setModalContent({
+          title: "Legal Information",
+          subtitle:
+            "Important legal information about Tulum, our company structure, and compliance with local laws and regulations.",
+        });
+        break;
+    }
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -16,7 +55,7 @@ export default function Footer() {
           <Logo />
           <blockquote className="max-w-xl">
             Tulum is a free app designed to help you discover and host parties
-            effortlessly. Whather you’re looking to attend the best events in
+            effortlessly. Whather you're looking to attend the best events in
             your city or create unforgettable expiriences as a host, Tulum
             connects you with a vibrant community of party-goers. Earn money,
             make new friends, and share your experience. Join Tulum and elevate
@@ -34,11 +73,34 @@ export default function Footer() {
           ))}
         </div>
         <ul className="w-20 flex flex-col justify-start gap-4">
-          <li className="text-lg font-light	 text-gray-700"> Terms </li>
-          <li className="text-lg font-light	 text-gray-700"> Privacy </li>
-          <li className="text-lg font-light	 text-gray-700"> Legal </li>
+          <li
+            className="text-lg font-light text-gray-700 cursor-pointer hover:text-gray-900"
+            onClick={() => handleOpenModal("terms")}
+          >
+            Terms
+          </li>
+          <li
+            className="text-lg font-light text-gray-700 cursor-pointer hover:text-gray-900"
+            onClick={() => handleOpenModal("privacy")}
+          >
+            Privacy
+          </li>
+          <li
+            className="text-lg font-light text-gray-700 cursor-pointer hover:text-gray-900"
+            onClick={() => handleOpenModal("legal")}
+          >
+            Legal
+          </li>
         </ul>
       </div>
+      {isModalOpen && (
+        <TermsModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          title={modalContent.title}
+          subtitle={modalContent.subtitle}
+        />
+      )}
 
       <div className="flex flex-row gap-1 text-2xl text-gray-700 font-medium items-center">
         <span>Follow us </span>

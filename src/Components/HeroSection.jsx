@@ -4,10 +4,9 @@ import appStore from "../assets/App-Store.svg";
 
 export default function HeroSection() {
   return (
-    <section
-      id="hero-section"
-      className="w-100 flex flex-row items-center border-solid  border-gray-950	"
-    >
+    <section className="w-100 flex flex-row items-center border-solid  border-gray-950	">
+      <div className="h-5px" id="hero-section"></div>
+
       <div className="w-full flex flex-row items-start text-start justify-center gap-16 flex-wrap lg:flex-nowrap">
         <div className="w-2/3 flex flex-col gap-8">
           <h1 className="">Download Tulum, Start Your Party, Earn Money!</h1>
